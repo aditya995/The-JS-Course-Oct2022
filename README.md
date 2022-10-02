@@ -23,7 +23,10 @@
  - npm install //  Install dependencies form package.json
 
 ## git
- - git clone https://github.com/aditya995/The-JS-Course-Oct2022.git     // Downloading files from github repo
+```
+git clone https://github.com/aditya995/The-JS-Course-Oct2022.git
+```
+// Downloading files from github repo
 
 // Fetching the changes made in Remote repo. If Remote repo's current commit differs from current Local commit and the parent of both commits are same- then it needs to fetche from Remote repo first, then it can push current changes in local commit. First use git pull and then push current changes to Remote repo.
  - git pull
