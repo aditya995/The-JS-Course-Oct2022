@@ -1,0 +1,35 @@
+variables
+constants
+
+#
+JavaScript is a dynamically typed language, but TypeScript is a statically typed language. Longer answer: In dynamically typed languages all type checks are performed in a runtime, only when your program is executing. So this means you can just assign anything you want to the variable and it will work.
+#
+
+Primary Datatypes:
+String, Number, Boolean
+
+Composite Datatypes:
+Array, Object
+
+Special Datatypes:
+Undefined, Null
+
+#
+Difference between null and undefined
+When checking for null or undefined, beware of the differences between equality (==) and identity (===) operators, as the former performs type-conversion.
+
+typeof null          // "object" (not "null" for legacy reasons)
+typeof undefined     // "undefined"
+null === undefined   // false
+null  == undefined   // true
+null === null        // true
+null == null         // true
+!null                // true
+isNaN(1 + null)      // false
+isNaN(1 + undefined) // true
+#
+
+var let const
+hoisting with var
+#tip declare variables at top to prevent hoisting
+dynamic

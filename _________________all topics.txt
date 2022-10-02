@@ -1,0 +1,13 @@
+introduction
+separation of concerns: write js in internal or external file
+variables
+constants
+premitive types
+dynamic types
+objects
+array
+functions
+types of functions
+scopes global, local, 
+
+from multiple files to bundle

@@ -1,0 +1,39 @@
+web/mobile apps
+realtime networking apps
+commandline tools
+games
+
+javascript runs on browser or node:
+
+browser has a javascript engine like,
+in firefox: spiderMonkey
+in chrome: v8
+
+Node is a c++ program that includes google's javascript engine!
+adv. Now javascript can be run outside of a browser, and can build backend for our apps for web and mobile
+
+browser and node both provide runtime env for js code.
+
+ECMAScript Vs JavaScript:
+
+specification vs programming lan
+ecma defines standards.
+
+ecma releases:
+1st 1997 
+in 2015 es2015/es6 (includes a lot of ground breaking changes)
+
+
+tips for writing in javascript
+# write on the bottom of the body section
+reason
+*the browser will load the body first which is a good practice
+*in order to be able to use js on the elements first it needs to be present or rendered! before js codes
+
+# clean code rules
+
+## readibility
+## clean
+## perdictable
+## Keep It Super Simple (KISS)
+## Dont Repeat Yourself (DRY)
