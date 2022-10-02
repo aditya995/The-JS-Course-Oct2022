@@ -32,6 +32,6 @@ Now javascript can be run outside of a browser in a command line interface, and 
 - If Js code is in external file then src points the file path with extension. Below code need to be included inside body tag of the HTML file.
 `<script src="mewmew.js" type="text/javascript"></script>`
 - If Js code needs to be in the same HTML file then-
-```<script src="mewmew.js" type="text/javascript">```
-```Js codes here```
-```</script>```
+`<script src="mewmew.js" type="text/javascript">`
+`Js codes here`
+`</script>`
