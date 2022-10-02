@@ -1,5 +1,13 @@
 # The-JS-Course-Oct2022
 
+## clean code rules
+
+- readibility
+- clean
+- perdictable
+- Keep It Super Simple (KISS)
+- Dont Repeat Yourself (DRY)
+
 ## Node
 ### Node project Creation setup
  - node --version   //  Checks the version of node
