@@ -41,16 +41,16 @@ console.log(`localIf ${localIf}, localElse ${localElse}`); //localIf undefined, 
 
 if (true) {
   if (global1 > 0) {
-    var localIf = -10;
+    var localIf = -100;
     console.log(`global1 ${global1}`); //global1 1
     console.log(`localIf ${localIf}, localElse ${localElse}`); //localIf -10, localElse undefined
   } else {
-    var localElse = -20;
+    var localElse = -200;
     console.log(`global1 ${global1}`);
     console.log(`localIf ${localIf}, localElse ${localElse}`); //localIf undefined, localElse -20
   }
 }
-console.log(`localIf ${localIf}, localElse ${localElse}`); //Depends on if else execution
+console.log(`G localIf ${localIf}, localElse ${localElse}`); //Depends on if else execution
 
 /**
  * We can access the variables (declared in a child block) from outside, if that is in a block [block scope]

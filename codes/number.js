@@ -8,5 +8,7 @@ let octalnum = 0367; //247
 let float = 55.08; //55.08
 let hexnum1 = 0xff; //255
 let hexnum2 = 0xff; //255
-
+console.log(integer);
+console.log(octalnum);
+console.log(hexnum1);
 console.log(hexnum2);

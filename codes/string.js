@@ -7,7 +7,7 @@ let str2 = '"String 2"';
 let str3 = `Template literals \nPrinting Escape sequence characters $`;
 console.log(`${str1} ${str2} ${str3}`);
 //  Prints raw content
-let str4 = String.raw`\$\^\@\\`;
+let str4 = String.raw`\$\^\@\\\ns`;
 console.log(`${str4}`);
 
 let str5 = str4 + "88";
@@ -28,6 +28,7 @@ let taggedTemplate = function (strArray, ...vals) {
 let bangla = "ভাই কি পেরা";
 taggedTemplate`Here is some string ${str3}, some integer value ${int}`;
 
+console.log(bangla);
 console.log("hello".startsWith("he"));
 console.log("hello".endsWith("lo"));
 console.log("hello".includes("ll"));

@@ -39,4 +39,9 @@ function F() {
   console.log(`Inside function-- value = ${value}`); //
 }
 F();
+if (true) {
+  var aaa = 100;
+  console.log("aaa", aaa);
+}
 console.log(`Outside -- value = ${value}`);
+console.log("aaa", aaa);
