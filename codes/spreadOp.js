@@ -15,13 +15,13 @@ let d = [...a, ...b];
 console.log(d);
 //  Making shallow copy of the object (copy of the element, not the proto or others!)
 let e = Object.assign([], a);
-console.log(e);
+console.log('e', e);
 e = Object.assign([], b);
-console.log(e);
+console.log('e',e);
 
 // Rest parameters (when it is used in a function argument It's called [rest parameter])
 let func = (firstval, secondval, ...args) => {
-    console.log(args);
+    console.log('args', args);
     let countArgs = args.length;
     let val = args[countArgs - 2] + args[countArgs - 1];
     console.log(`${val} = ${args[countArgs - 2]} + ${args[countArgs - 1]}`);
