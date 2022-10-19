@@ -4,7 +4,7 @@ node this
 // Problem with [annonymous functions] regarding 'this' keyword
 var mb = function () {
     this.val = 21;
-    setTimeout(function() {// Here it has its owh 'this'
+    setTimeout(function() {// Here it has its own 'this'
         this.val++; //  Its not the 'val' from outside, It is now a new variable of the current function
         console.log(this.val); // NaN
     }, 1);
