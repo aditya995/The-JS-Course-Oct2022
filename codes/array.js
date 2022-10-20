@@ -13,7 +13,7 @@ console.log(arr1);
 // 4 ways to Populate an Array in JavaScript
 
 // Using --> Array.fill()
-let filledArray1 = new Array(3).fill('hello');
+let filledArray1 = new Array(4).fill('hello');
 filledArray1[1] = '';
 console.log(filledArray1);
 /**
@@ -22,7 +22,7 @@ console.log(filledArray1);
  * It will change every object in the array because they are all referencing the same object.
  */
 let filledArray2 = new Array(5).fill({ 'hello': 'goodbye' });
-filledArray2[1].hello = '#'; // Mutation will change all the values from 'goodbye' to '#'
+filledArray2[0].hello = '#'; // Mutation will change all the values from 'goodbye' to '#'
 filledArray2[1] = {hello: 'new'}; // Re-assigning still works on single element 
 console.log(filledArray2);
 let filledArray3 = new Array(6).fill(null).map(() => ({ 'hello': 'goodbye' }));
@@ -33,10 +33,12 @@ console.log(filledArray3);
 // Rather than using the fill and map methods, we could create a new array like this:
 
 let filledArrayL = new Array(10);
+console.log('**',filledArrayL);
 // Then loop over the array the old fashioned way like this:
 for(let i=0; i<5;i++){
     filledArrayL[i] = {'hello':'goodbye'};
 }
+console.log('**',filledArrayL);
 // This avoids using the map method.
 
 // Using Array.from()
@@ -110,27 +112,29 @@ let objArray = [
 // must use comparator function, Or It wont be sorted
 // Works good with number values in properties
 let sortedObjArr = objArray.sort(function(a, b){return a.number - b.number}); // must use comparator function, Or It wont be sorted
-console.log(sortedObjArr);
+console.log('#', sortedObjArr);
 // strings are bit tricky comparison
 let sortedStrProp = objArray.sort(function (a, b) {
     let x = a.name.toLowerCase(); // grab the porperty
     let y = b.name.toLowerCase(); // grab the porperty
-    if (x < y) {return 1;} // for ascending -1, descending 1
-    if (x > y) {return -1;} // for ascending 1, descending -1
+    if (x < y) {return -1;} // for ascending -1, descending 1
+    if (x > y) {return 1;} // for ascending 1, descending -1
     return 0;
 });
-console.log(sortedStrProp);
+console.log('r', sortedStrProp);
 console.log('----------------------3')
 
 let arrStr = [1, 2, 3, 'Q', { name: 'orko'}];
 console.log(arrStr);
 console.log(arrStr.toString());
-console.log(arrStr.join());
+console.log('*', arrStr.join());
 console.log(arrStr.join('~~'));
+console.log('#', arrStr);
 let arr01 = [1, 2, 3];
 let arr02 = ['rr'];
 let arr03 = [' o', 'p', '_ '];
-console.log(arr01.join(arr02));
+console.log('#1', arr01.join(arr02));
+console.log('#2', arr01);
 /** Outputs the same */
 console.log(arr01.join(arr03)); 
 console.log(arr01.join(arr03.toString()));
